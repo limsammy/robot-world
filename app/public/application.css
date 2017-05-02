@@ -9,3 +9,13 @@ h1 {
 	background-color: #B5C0C1;
 	padding: 8px;
 }
+
+.index {
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	padding-left: 10px;
+	margin-right: 65%;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}

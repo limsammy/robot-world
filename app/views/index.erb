@@ -7,16 +7,18 @@
 <body>
   <h1>My Robots</h1>
   <a href="/robots/new"><button>Add a Robot</button></a>
-  <% @robots.each do |robot| %>
-  <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
-  <p><%= robot.city %></p>
-  <p><%= robot.state %></p>
-  <p><%= robot.department %></p>
-  <a href="/robots/<%= robot.id %>/edit"><button>Edit</button></a>
-  <form action="/robots/<%= robot.id %>" method="POST">
-    <input type="hidden" name="_method" value="DELETE">
-    <input type="submit" name="delete" value="Delete">
-  </form>
-  <% end %>
+  <main class="index">
+    <% @robots.each do |robot| %>
+    <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+    <p><%= robot.city %></p>
+    <p><%= robot.state %></p>
+    <p><%= robot.department %></p>
+    <a href="/robots/<%= robot.id %>/edit"><button>Edit</button></a>
+    <form action="/robots/<%= robot.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" name="delete" value="Delete">
+    </form>
+    <% end %>
+  </main>
 </body>
 </html>
