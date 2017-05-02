@@ -1,1 +1,11 @@
+body {
+	background-image: url("http://wallpapercave.com/wp/tDo5tgp.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0% 100px;
+}
 
+h1 {
+	background-color: #B5C0C1;
+	padding: 8px;
+}

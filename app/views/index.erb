@@ -1,6 +1,13 @@
-<h1>My Robots</h1>
-<a href="/robots/new"><button>Add a Robot</button></a>
-<% @robots.each do |robot| %>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="app/public/application.css">
+  <title>Robot World</title>
+</head>
+<body>
+  <h1>My Robots</h1>
+  <a href="/robots/new"><button>Add a Robot</button></a>
+  <% @robots.each do |robot| %>
   <h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
   <p><%= robot.city %></p>
   <p><%= robot.state %></p>
@@ -10,4 +17,6 @@
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" name="delete" value="Delete">
   </form>
-<% end %>
+  <% end %>
+</body>
+</html>

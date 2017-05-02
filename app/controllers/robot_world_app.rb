@@ -43,4 +43,3 @@ class RobotWorldApp < Sinatra::Base
     redirect '/robots'
   end
 end
-
