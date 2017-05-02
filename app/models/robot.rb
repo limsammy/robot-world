@@ -29,4 +29,9 @@ class Robot
     database.results_as_hash = true
     database
   end
+
+  def self.find(id)
+    robot = database.execute("SELECT * FROM robots WHERE id = ?", id).first
+    Robot.new(robot)
+  end
 end
