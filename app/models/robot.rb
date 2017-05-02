@@ -49,4 +49,9 @@ class Robot
                       id)
     Robot.find(id)
   end
+
+  def self.destroy(id)
+    database.execute("DELETE FROM robots
+                      WHERE id = ?;", id)
+  end
 end
